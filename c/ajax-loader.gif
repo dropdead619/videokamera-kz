@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <title></title>
+        <meta name="description" content="Camfor видеонаблюдение" />
+        <meta name="keywords" content="видеонаблюдение" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/c/content.css?v=24" rel="stylesheet">
+    <link href="/c/style.css?v=24" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link href="/c/blocks.css?v=24" rel="stylesheet">
+    <link href="/c/adaptive.css?v=24" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="/c/slick-theme.css?v=24"/>
+    <link href="/c/img.css?v=24" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/style.min.css?v=25">
+        <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+    <script>
+        function onloadReCapCallback() {
+            console.log("reCAPTCHA has loaded!");
+            grecaptcha.reset();
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfcH1gkAAAAADrwmNO3FQzMGiPmjiecTdJ7n3IR"></script>
+
+        <link rel="shortcut icon" href="/i/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/i/favicon.ico" type="image/x-icon" />
+        
+        <!-- [if IE]>
+        <meta http-equiv="X-UA-Compatible" content="edge">
+        <![endif]-->
+    </head>
+    <body>
+            
+<!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TMSCK5" height="0"
+width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TMSCK5');</script>
+<!-- End Google Tag Manager -->
+
+    <header class="header-menu">
+        <div class="container-82 top-menu---new">
+            <a class="top-menu---new_logo" href="/"><img class="top-menu---new_logo-img" src="/upl/logo.svg" alt="logo"></a>
+            <div class="top-menu---new_block">
+                <nav class="top-menu---new_nav">
+                    <ul class="top-menu---new_nav-list">
+                        <li class="top-menu---new_nav-list-li menu-none_5" style="display: none"><a class="top-menu---new_nav-a" href="">Услуги</a></li>
+                        <li class="top-menu---new_nav-list-li menu-none_5"><a class="top-menu---new_nav-a" href="/warranty">Гарантия</a></li>
+                        <li class="top-menu---new_nav-list-li menu-none_4"><a class="top-menu---new_nav-a" href="/business">Для бизнеса</a></li>
+                        <li class="top-menu---new_nav-list-li menu-none_2"><a class="top-menu---new_nav-a" href="/portfolio">Наши работы</a></li>
+                        <li class="top-menu---new_nav-list-li menu-none_3"><a class="top-menu---new_nav-a" href="/contacts">Контакты</a></li>
+                        <li class="top-menu---new_nav-list-li menu-none_1"><a class="top-menu---new_nav-a" href="/articles">Статьи</a></li>
+                    </ul>
+                </nav>
+                <div class="top-menu---new_contacts">
+                    <a class="top-menu---new_contacts-a top-menu---new_contacts_email" href="mailto:its-astana@yandex.kz">its-astana@yandex.kz</a>
+                    <span class="ya-phone"><a class="top-menu---new_contacts-a top-menu---new_contacts-tel1" href="tel:+77781001206">+7(778)100-12-06</a></span>
+                    <a class="top-menu---new_contacts-a top-menu---new_contacts-tel2" href="tel:+79295647643">+7(929)564-76-43</a>
+                </div>
+            </div>
+            <div class="top-menu---new_burger">
+                <div class="top-menu---new_burger-button" id="nav-icon3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="burger-menu">
+                    <ul class="burger-menu_list">
+                        <li style="display: none" class="burger-menu_list-li menu-block_5"><a href="" class="burger-menu_list-li-a">Услуги</a></li>
+                        <li class="burger-menu_list-li menu-block_5"><a href="/warranty" class="burger-menu_list-li-a">Гарантия</a></li>
+                        <li class="burger-menu_list-li menu-block_4"><a href="/business" class="burger-menu_list-li-a">Для бизнеса</a></li>
+                        <li class="burger-menu_list-li menu-block_3"><a href="/contacts" class="burger-menu_list-li-a">Контакты</a></li>
+                        <li class="burger-menu_list-li menu-block_2"><a href="/portfolio" class="burger-menu_list-li-a">Наши работы</a></li>
+                        <li class="burger-menu_list-li menu-block_1"><a href="/articles" class="burger-menu_list-li-a">Статьи</a></li>
+                        <li class="burger-menu_list-li"><a href="/faq" class="burger-menu_list-li-a">Часто задаваемые вопросы</a></li>
+                        <li class="burger-menu_list-li burger-menu_list-li-email"><a href="mailto:its-astana@yandex.kz" class="burger-menu_list-li-a">its-astana@yandex.kz</a></li>
+                        <li class="burger-menu_list-li burger-menu_list-li-tel2"><a href="tel:+79295647643" class="burger-menu_list-li-a">+7(929)564-76-43</a></li>
+                                            </ul>
+                </div>
+            </div>
+    </header>
+    
+    <div class="cf-wrapper">
+        <div class="cf-content">
+            <h1>Страница не найдена.</h1>
+            <p>Возможно, она была перенесена на другой адрес, либо удалена.</p>
+            <p>Попробуйте начать с <a href="/">заглавной страницы</a>.</p>
+            <p>Либо, позвоните нам по телефонам, указанным в верхней части страницы.</p>
+            <p>Также, можно заказать бесплатную консультацию, воспользовавшись формой внизу страницы.</p>
+        </div>
+    </div>
+
+    <section class="call-us wrapper-100 wrapper-100_form-background">
+    <div class="background-nd_form">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 235" preserveAspectRatio="none">
+            <polygon points="0,0 0,130 970,235 1400,0" fill="#ffffff"></polygon>
+            <polyline points="0,30 470,220 1400,130" fill="none" stroke-width="3" stroke="#EB1A16" stroke-opacity="0.15"></polyline>
+        </svg>
+    </div>
+    <div class="wrapper-100 background-color-lightblue">
+        <div class="wrapper-form">
+            <form class="form-block container-72 js-user-ask-call" action="" method="post">
+                                    <div class="form-caption">
+                        <p class="form-caption_p">Появились вопросы?</p>
+                        <p class="form-caption_p">Мы вам перезвоним</p>
+                    </div>
+                    <div class="form-block_inputs">
+                        <input class="call-us__new" type="hidden" name="new" value="1">
+                        <input
+                                onclick="yaCounter43677764.reachGoal('obrashchatsya'); return true;"
+                                class="call-us__name form-text form-name"
+                                type="text"
+                                name="name"                                placeholder="Ваше имя:"
+                                value=""
+                        >
+                                                <input
+                                onclick="yaCounter43677764.reachGoal('nomer'); return true;"
+                                class="call-us__number form-text form-phone"
+                                type="text"
+                                name="phone"
+                                placeholder="+7"
+                                value=""
+                        >
+                                                <label class="personal-data-checkbox">
+                            <input class="input-checkbox js-call-us__agree" type="checkbox" name="agree" value="1" checked>
+                            Я подтверждаю свою дееспособность и даю согласие <a class="personal-data-checkbox_a" href="https://videocamera.kz/personal_agree">по установленной форме</a> на обработку персональных данных
+                        </label>
+                        <input
+                                onclick="yaCounter43677764.reachGoal('otpravit'); return true;"
+                                class="btn btn-primary form-block_button"
+                                type="submit"
+                                value="Отправить заявку"
+                        >
+                                            </div>
+                            </form>
+        </div>
+    </div>
+</section>    <div class="background-nd_footer" style="background:#333232;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 200" preserveAspectRatio="none">
+        <polygon fill="#f0f4f7" points="0,0 1400,0 1400,50 1050,180"></polygon>
+    </svg>
+</div>
+<footer class="footer-page wrapper-100 wrapper-100-footer">
+    <div class="wrapper-100 background-color-darkgrey">
+        <div class="wrapper-footer container-72">
+            <span class="footer-caption---new">Установка систем видеонаблюдения в Москве и МО</span>
+            <div class="footer-content-block---new">
+                <ul class="footer-city_list---new" id="cities_columns">
+                                            <li class="footer-city_list-li---new">
+                                                            Балашиха
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Видное
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Дзержинский
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Дмитров
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Долгопрудный
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Домодедово
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Железнодорожный
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Жуковский
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Ивантеевка
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Истра
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Королев
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Котельники
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Красноармейск
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Красногорск
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Лобня
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Лыткарино
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Люберцы
+                                                    </li>
+                                            <li class="footer-city_list-li---new" class="important">
+                                                            <a class="footer-city_list-li-a---new"
+                                   href="/cities/moskva.36">МОСКВА</a>
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Мытищи
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Ногинск
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Одинцово
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Орехово-Зуево
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Пушкино
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Раменское
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Реутов
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Сергиев Посад
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Солнечногорск
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Фрязино
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Химки
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Хотьково
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Черноголовка
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Щелково
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Электросталь
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Электроугли
+                                                    </li>
+                                            <li class="footer-city_list-li---new">
+                                                            Юбилейный
+                                                    </li>
+                                    </ul>
+                <ul class="footer-menu-mobile---new">
+                    <li class="footer-menu_li-mobile---new"><a class="footer-menu_li-a-mobile---new"
+                                                               href="https://videocamera.kz/contacts">Контакты</a></li>
+                    <li class="footer-menu_li-mobile---new"><a class="footer-menu_li-a-mobile---new" href="/solutions">Готовые
+                            решения</a></li>
+                    <li class="footer-menu_li-mobile---new"><a class="footer-menu_li-a-mobile---new" href="/faq">Часто
+                            задаваемые вопросы</a></li>
+                    <li class="footer-menu_li-mobile---new"><a class="footer-menu_li-a-mobile---new" href="/payment">Оплата</a>
+                    </li>
+                    <li class="footer-menu_li-mobile---new"><a class="footer-menu_li-a-mobile---new" href="/warranty">Гарантия</a>
+                    </li>
+                    <li class="footer-menu_li-mobile---new"><a class="footer-menu_li-a-mobile---new"
+                                                               href="/cena-na-montazh-videonablyudeniya">Цены на
+                            монтаж</a></li>
+                </ul>
+                <div class="footer-contacts---new">
+                    <span class="footer-contacts_email---new"><a href="mailto:its-astana@yandex.kz">its-astana@yandex.kz</a></span>
+                    <span class="footer-contacts_tel---new ya-phone"><a href="tel:+77781001206">+7(495)<span
+                                    class="footer-contacts_tel-big---new"> 748-95-23</span></a></span>
+                    <span class="footer-contacts_tel---new"><a href="tel:+79295647643">+7(929)<span
+                                    class="footer-contacts_tel-big---new"> 564-76-43</span></a></span>
+                    <ul class="footer-contacts_soc---new">
+                        <li class="footer-contacts_soc-li---new"><a class="footer-contacts_soc-li-a---new"
+                                                                    href="https://paste_your_url_here.com"><img
+                                        class="footer-contacts_soc-li-a-img---new" src="/upl/vk.png" alt=""></a></li>
+                        <li class="footer-contacts_soc-li---new"><a class="footer-contacts_soc-li-a---new"
+                                                                    href="https://paste_your_url_here.com"><img
+                                        class="footer-contacts_soc-li-a-img---new" src="/upl/tw.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <span class="footer-caption-mobile---new">Установка систем видеонаблюдения в Москве и МО</span>
+                <ul class="footer-city_list-mobile---new" id="cities_columns">
+                                            <li>
+                                                            Балашиха
+                                                    </li>
+                                            <li>
+                                                            Видное
+                                                    </li>
+                                            <li>
+                                                            Дзержинский
+                                                    </li>
+                                            <li>
+                                                            Дмитров
+                                                    </li>
+                                            <li>
+                                                            Долгопрудный
+                                                    </li>
+                                            <li>
+                                                            Домодедово
+                                                    </li>
+                                            <li>
+                                                            Железнодорожный
+                                                    </li>
+                                            <li>
+                                                            Жуковский
+                                                    </li>
+                                            <li>
+                                                            Ивантеевка
+                                                    </li>
+                                            <li>
+                                                            Истра
+                                                    </li>
+                                            <li>
+                                                            Королев
+                                                    </li>
+                                            <li>
+                                                            Котельники
+                                                    </li>
+                                            <li>
+                                                            Красноармейск
+                                                    </li>
+                                            <li>
+                                                            Красногорск
+                                                    </li>
+                                            <li>
+                                                            Лобня
+                                                    </li>
+                                            <li>
+                                                            Лыткарино
+                                                    </li>
+                                            <li>
+                                                            Люберцы
+                                                    </li>
+                                            <li class="important footer-city_list-li-mobile---new">
+                                                            <a class="footer-city_list-li-a-mobile---new"
+                                   href="/cities/moskva.36">МОСКВА</a>
+                                                    </li>
+                                            <li>
+                                                            Мытищи
+                                                    </li>
+                                            <li>
+                                                            Ногинск
+                                                    </li>
+                                            <li>
+                                                            Одинцово
+                                                    </li>
+                                            <li>
+                                                            Орехово-Зуево
+                                                    </li>
+                                            <li>
+                                                            Пушкино
+                                                    </li>
+                                            <li>
+                                                            Раменское
+                                                    </li>
+                                            <li>
+                                                            Реутов
+                                                    </li>
+                                            <li>
+                                                            Сергиев Посад
+                                                    </li>
+                                            <li>
+                                                            Солнечногорск
+                                                    </li>
+                                            <li>
+                                                            Фрязино
+                                                    </li>
+                                            <li>
+                                                            Химки
+                                                    </li>
+                                            <li>
+                                                            Хотьково
+                                                    </li>
+                                            <li>
+                                                            Черноголовка
+                                                    </li>
+                                            <li>
+                                                            Щелково
+                                                    </li>
+                                            <li>
+                                                            Электросталь
+                                                    </li>
+                                            <li>
+                                                            Электроугли
+                                                    </li>
+                                            <li>
+                                                            Юбилейный
+                                                    </li>
+                                    </ul>
+                <ul class="footer-menu---new">
+                    <li class="footer-menu_li---new footer-menu_li-1"><a class="footer-menu_li-a---new"
+                                                                         href="/contacts">Контакты</a></li>
+                    <li class="footer-menu_li---new footer-menu_li-2"><a class="footer-menu_li-a---new"
+                                                                         href="/solutions">Готовые решения</a></li>
+                    <li class="footer-menu_li---new footer-menu_li-3"><a class="footer-menu_li-a---new" href="/faq">Часто
+                            задаваемые вопросы</a></li>
+                    <li class="footer-menu_li---new footer-menu_li-1"><a class="footer-menu_li-a---new"
+                                                                         href="/warranty">Гарантия</a></li>
+                    <li class="footer-menu_li---new footer-menu_li-2"><a class="footer-menu_li-a---new"
+                                                                         href="/cena-na-montazh-videonablyudeniya">Цены
+                            на монтаж</a></li>
+                    <li class="footer-menu_li---new footer-menu_li-3"><a class="footer-menu_li-a---new"
+                                                                         href="/payment">Оплата</a></li>
+                </ul>
+                <p class="footer-content-block_copyright---new">Videocamera.kz, 2023. Videocamera.kz - системы видеонаблюдения</p>
+            </div>
+        </div>
+    </div>
+</footer>    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter43677764 = new Ya.Metrika({
+                        id:43677764,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/43677764/1" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript" src="/j/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="/j/script.js?1687587809"></script>
+    <!-- pixel -->
+
+                </body>
+</html>
