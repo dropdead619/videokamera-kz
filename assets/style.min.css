@@ -26,6 +26,14 @@ pre {
     font-size: 1em
 }
 
+.bg-white {
+    background-color: white;
+}
+
+.mb-none {
+    margin-bottom: 0;
+}
+
 a {
     background-color: transparent
 }
@@ -707,7 +715,7 @@ body p {
 }
 
 .banner-button {
-    width: 100%
+    width: 100%;
 }
 
 .banner-button_text {
@@ -716,6 +724,8 @@ body p {
     color: #fff;
     background: #eb1a16;
     border: none;
+    cursor: pointer;
+
     border-radius: 12px;
     height: 55px;
     width: 260px;

@@ -26,6 +26,10 @@
     <link rel="shortcut icon" href="./i/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./i/favicon.ico" type="image/x-icon" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer></script>
+    <script src="./j/script.js?1687587808" defer></script>
+
     <!-- [if IE]>
             <meta http-equiv="X-UA-Compatible" content="edge">
             <![endif]-->
@@ -46,8 +50,6 @@
                                 href="/warranty">Гарантия</a></li>
                         <li class="top-menu---new_nav-list-li menu-none_4"><a class="top-menu---new_nav-a"
                                 href="/business">Для бизнеса</a></li>
-                        <li class="top-menu---new_nav-list-li menu-none_2"><a class="top-menu---new_nav-a"
-                                href="/portfolio">Наши работы</a></li>
                         <li class="top-menu---new_nav-list-li menu-none_3"><a class="top-menu---new_nav-a"
                                 href="/contacts">Контакты</a></li>
                         <li class="top-menu---new_nav-list-li menu-none_1"><a class="top-menu---new_nav-a"
@@ -79,8 +81,6 @@
                                 class="burger-menu_list-li-a">Для бизнеса</a></li>
                         <li class="burger-menu_list-li menu-block_3"><a href="/contacts"
                                 class="burger-menu_list-li-a">Контакты</a></li>
-                        <li class="burger-menu_list-li menu-block_2"><a href="/portfolio"
-                                class="burger-menu_list-li-a">Наши работы</a></li>
                         <li class="burger-menu_list-li menu-block_1"><a href="/articles"
                                 class="burger-menu_list-li-a">Статьи</a></li>
                         <li class="burger-menu_list-li"><a href="/faq" class="burger-menu_list-li-a">Часто задаваемые
@@ -99,7 +99,7 @@
     <div class="main_banner---new wrapper-100">
         <ul class="main_banner---new__container">
             <li>
-                <a data-imp-lightbox-trigger="orderForm" class="main_banner---new__img--desktop">
+                <a href="#contact_form" class="main_banner---new__img--desktop">
                     <div class="container-82 banner-content">
                         <p class="banner-caption"><span class="banner-caption_span">Системы контроля и управления
                                 доступом</span>
@@ -115,7 +115,7 @@
                     </div>
                     <img src="./upl/bn/skud-desctop.jpg" />
                 </a>
-                <a data-imp-lightbox-trigger="orderForm" class="main_banner---new__img--desktop_1000">
+                <a href="#contact_form" class="main_banner---new__img--desktop_1000">
                     <div class="container-82 banner-content">
                         <p class="banner-caption"><span class="banner-caption_span">Системы контроля и управления
                                 доступом</span>
@@ -131,7 +131,7 @@
                     </div>
                     <img src="./upl/bn/skud-desctop_1000.jpg" />
                 </a>
-                <a data-imp-lightbox-trigger="orderForm" class="main_banner---new__img--mobile">
+                <a href="#contact_form" class="main_banner---new__img--mobile">
                     <div class="container-82 banner-content">
                         <p class="banner-caption">Системы контроля и управления доступом</p>
                         <div class="banner-text">
@@ -459,422 +459,108 @@
             </div>
         </div>
     </div>
-    <div class="cf-wrapper">
-        <h2 class="name-block-landing">С нами выгодно и надежно!</h2>
-        <ul class="cf-index-services--blocks-landing">
-            <li class="cf-index-solution--icon-landing">
-                <img src="./upl/skud/skud-red-1.jpg" />
-                <div>
-                    <span>Соблюдение сроков</span>
-                    <p>Строго соблюдаем сроки поставки оборудования и выполнения монтажных работ</p>
+   
+    <div class="bg-white">
+        <div class="cf-wrapper">
+            <h2 class="name-block-landing">С нами выгодно и надежно!</h2>
+            <ul class="cf-index-services--blocks-landing">
+                <li class="cf-index-solution--icon-landing">
+                    <img src="./upl/skud/skud-red-1.jpg" />
+                    <div>
+                        <span>Соблюдение сроков</span>
+                        <p>Строго соблюдаем сроки поставки оборудования и выполнения монтажных работ</p>
+                    </div>
+                </li>
+                <li class="cf-index-solution--icon-landing">
+                    <img src="./upl/skud/skud-red-2.jpg" />
+                    <div>
+                        <span>100% гарантия на обслуживание</span>
+                        <p>Гарантия на оборудование от производителя</p>
+                    </div>
+                </li>
+                <li class="cf-index-solution--icon-landing">
+                    <img src="./upl/skud/skud-red-3.jpg" />
+                    <div>
+                        <span>Гарания качества</span>
+                        <p>Гарантия качества выполненых работ на 1 год</p>
+                    </div>
+                </li>
+                <li class="cf-index-solution--icon-landing">
+                    <img src="./upl/skud/skud-red-4.jpg" />
+                    <div>
+                        <span>Гибкий подход</span>
+                        <p>Возможность оплаты проекта поэтапно</p>
+                    </div>
+                </li>
+                <li class="cf-index-solution--icon-landing">
+                    <img src="./upl/skud/skud-red-5.jpg" />
+                    <div>
+                        <span>Только подходящее предложение</span>
+                        <p>Предварительно детально изучаем объект и предлагаем только необходимые оборудование и работы</p>
+                    </div>
+                </li>
+                <li class="cf-index-solution--icon-landing">
+                    <img src="./upl/skud/skud-red-6.jpg" />
+                    <div>
+                        <span>Бесплатный выезд специалиста</span>
+                        <p>Выезд специалиста для предварительного аудита объекта бесплатный! Предоставляем несколько
+                            вариантов реализации проекта</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cf-wrapper">
+            <div class="mb-none cf-content">
+                <div class="cf-content--text">
+                    <p><strong>Установка СКУД (Система контроля и управления доступом).</strong></p>
+    
+                    <p>Большинство современных предприятий, офисов, складских комплексов и прочих объектов не обходятся без
+                        системы контроля и управления доступом (СКУД).<br />
+                        Установка системы контроля и управления доступом (СКУД) не только обеспечивает безопасность вашему
+                        бизнесу и сотрудникам, но и позволяет решать такие задачи, как: учет рабочего времени,
+                        предоставление выборочного доступа в помещения конкретным сотрудникам, организация пропускной
+                        системы, оперативное блокирование или разблокирование дверей, идентификация личности и прочие. К
+                        выбору оборудования и проектированию СКУД стоит подходить с полной ответственностью и лучше
+                        довериться профессионалам. Это не только сэкономит Ваше время и средства, но и позволит установить
+                        СКУД максимально эффективную и подходящую под Ваши требования.</p>
+    
+                    <p><strong>Монтаж СКУД. Этапы взаимодействия.</strong></p>
+    
+                    <p>Установка СКУД после получения заявки или обращения в &laquo;Камфор&raquo; происходит следующим
+                        образом:</p>
+    
+                    <ul>
+                        <li><strong>Выезд специалиста и обследование объекта контроля.</strong> Инженер оценивает все
+                            технические параметры помещения: входы/выходы, тип дверей, план помещений, доступ к электросетям
+                            и прочее. Также на этом этапе согласовываются необходимый функционал СКУД, количество&nbsp;
+                            дверей, место расположения сервера, возможное дополнительное оборудование.</li>
+                        <li><strong>Подготовка коммерческого предложения.</strong> После осмотра объекта Заказчик получает
+                            коммерческое предложение на установку системы контроля и управления доступом с полным списком
+                            оборудования и необходимых работ.</li>
+                        <li><strong>Внесение корректировок.</strong> До монтажа СКУД с Заказчиком еще раз утверждается
+                            предложение, и вносятся корректировки, касающиеся типа оборудования и организации СКУД при
+                            необходимости.</li>
+                        <li><strong>Заключение договора.</strong></li>
+                        <li><strong>Доставка оборудования и монтаж СКУД.</strong> Осуществляется монтаж системы контроля и
+                            управления доступом (СКУД), пуско-наладочные работы (ПНР) согласно договору.</li>
+                        <li><strong>Подписание Акта выполненных работ.</strong> По завершению установки оборудования СКУД и
+                            настройки Заказчик принимает выполненные работы. Также наши специалисты обучают работе с СКУД
+                            сотрудников Заказчика, стороны подписывают Акт выполненных работ.</li>
+                    </ul>
+    
+                    <p>Наша команда &ndash; это опытные инженеры и монтажники, которые с удовольствием берутся за задачи
+                        любой сложности. Мы работаем только с проверенным современным оборудованием. Работаем с физическими
+                        и юридическими лицами.</p>
+    
+                    <p>&nbsp;</p>
+    
                 </div>
-            </li>
-            <li class="cf-index-solution--icon-landing">
-                <img src="./upl/skud/skud-red-2.jpg" />
-                <div>
-                    <span>100% гарантия на обслуживание</span>
-                    <p>Гарантия на оборудование от производителя</p>
-                </div>
-            </li>
-            <li class="cf-index-solution--icon-landing">
-                <img src="./upl/skud/skud-red-3.jpg" />
-                <div>
-                    <span>Гарания качества</span>
-                    <p>Гарантия качества выполненых работ на 1 год</p>
-                </div>
-            </li>
-            <li class="cf-index-solution--icon-landing">
-                <img src="./upl/skud/skud-red-4.jpg" />
-                <div>
-                    <span>Гибкий подход</span>
-                    <p>Возможность оплаты проекта поэтапно</p>
-                </div>
-            </li>
-            <li class="cf-index-solution--icon-landing">
-                <img src="./upl/skud/skud-red-5.jpg" />
-                <div>
-                    <span>Только подходящее предложение</span>
-                    <p>Предварительно детально изучаем объект и предлагаем только необходимые оборудование и работы</p>
-                </div>
-            </li>
-            <li class="cf-index-solution--icon-landing">
-                <img src="./upl/skud/skud-red-6.jpg" />
-                <div>
-                    <span>Бесплатный выезд специалиста</span>
-                    <p>Выезд специалиста для предварительного аудита объекта бесплатный! Предоставляем несколько
-                        вариантов реализации проекта</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="cf-wrapper">
-        <div class="cf-content">
-            <div class="cf-content--text">
-                <p><strong>Установка СКУД (Система контроля и управления доступом).</strong></p>
-
-                <p>Большинство современных предприятий, офисов, складских комплексов и прочих объектов не обходятся без
-                    системы контроля и управления доступом (СКУД).<br />
-                    Установка системы контроля и управления доступом (СКУД) не только обеспечивает безопасность вашему
-                    бизнесу и сотрудникам, но и позволяет решать такие задачи, как: учет рабочего времени,
-                    предоставление выборочного доступа в помещения конкретным сотрудникам, организация пропускной
-                    системы, оперативное блокирование или разблокирование дверей, идентификация личности и прочие. К
-                    выбору оборудования и проектированию СКУД стоит подходить с полной ответственностью и лучше
-                    довериться профессионалам. Это не только сэкономит Ваше время и средства, но и позволит установить
-                    СКУД максимально эффективную и подходящую под Ваши требования.</p>
-
-                <p><strong>Монтаж СКУД. Этапы взаимодействия.</strong></p>
-
-                <p>Установка СКУД после получения заявки или обращения в &laquo;Камфор&raquo; происходит следующим
-                    образом:</p>
-
-                <ul>
-                    <li><strong>Выезд специалиста и обследование объекта контроля.</strong> Инженер оценивает все
-                        технические параметры помещения: входы/выходы, тип дверей, план помещений, доступ к электросетям
-                        и прочее. Также на этом этапе согласовываются необходимый функционал СКУД, количество&nbsp;
-                        дверей, место расположения сервера, возможное дополнительное оборудование.</li>
-                    <li><strong>Подготовка коммерческого предложения.</strong> После осмотра объекта Заказчик получает
-                        коммерческое предложение на установку системы контроля и управления доступом с полным списком
-                        оборудования и необходимых работ.</li>
-                    <li><strong>Внесение корректировок.</strong> До монтажа СКУД с Заказчиком еще раз утверждается
-                        предложение, и вносятся корректировки, касающиеся типа оборудования и организации СКУД при
-                        необходимости.</li>
-                    <li><strong>Заключение договора.</strong></li>
-                    <li><strong>Доставка оборудования и монтаж СКУД.</strong> Осуществляется монтаж системы контроля и
-                        управления доступом (СКУД), пуско-наладочные работы (ПНР) согласно договору.</li>
-                    <li><strong>Подписание Акта выполненных работ.</strong> По завершению установки оборудования СКУД и
-                        настройки Заказчик принимает выполненные работы. Также наши специалисты обучают работе с СКУД
-                        сотрудников Заказчика, стороны подписывают Акт выполненных работ.</li>
-                </ul>
-
-                <p>Наша команда &ndash; это опытные инженеры и монтажники, которые с удовольствием берутся за задачи
-                    любой сложности. Мы работаем только с проверенным современным оборудованием. Работаем с физическими
-                    и юридическими лицами.</p>
-
-                <p>&nbsp;</p>
-
             </div>
         </div>
     </div>
-    <div class="background-color-lightgrey wrapper-100">
-        <div class="container-82 portfolio-slider---new-wrapper">
-            <div class="portfolio-slider---new__all"><a class="btn" href="/portfolio">Посмотреть все
-                    работы</a></div>
-            <h2>Наши работы</h2>
-            <ul class="portfolio-slider---new_list">
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/ustanovka-kupolnyh-kamer-videonablyudeniya-so-zvukom.40"><img
-                                src="./upl/img/1/3/8/9/5001.jpeg"
-                                alt="Установка купольных камер видеонаблюдения со звуком" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/ustanovka-kupolnyh-kamer-videonablyudeniya-so-zvukom.40">Установка купольных
-                            камер видеонаблюдения со звуком</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        Для монтажа большинства систем видеонаблюдения внутри помещений применяются купольные камеры
-                        видеонаблюдения. Для записи звука выбирают камеры со встроенными микрофонами. Такие видеокамеры
-                        встречаются в модельном ряду любого производителя систем видеонаблюдения. В этой
-                        стоматологической клинике мы установили купольные видеокамеры с микрофонами Hikvision - одного
-                        из мировых лидеров среди производителей систем видеонаблюдения.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/ustanovka-kupolnyh-kamer-videonablyudeniya-so-zvukom.40">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/montag-kamer-videonablyudeniya-dahua.43"><img
-                                src="./upl/img/1/4/4/a/5194.jpeg" alt="Монтаж камер видеонаблюдения DAHUA" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/montag-kamer-videonablyudeniya-dahua.43">Монтаж камер видеонаблюдения
-                            DAHUA</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        Камеры видеонаблюдения и видеорегистраторы Dahua отличаются надежностью, качеством и простотой в
-                        эксплуатации. Системы видеонаблюдения на базе оборудования Dahua подходят для любых объектов:
-                        крупных предприятий, складских комплексов, загородных домов, офисов и прочих. Модельный ряд
-                        камер Dahua достаточно широк, чтобы соответствовать любым требованиям к системе видеонаблюдения:
-                        съемка в высоком разрешении, запись звука, съемка в полной темноте, двусторонняя аудиосвязь,
-                        удаленный доступ и т.д.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/montag-kamer-videonablyudeniya-dahua.43">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/montag-ip-kamer-videonablyudeniya.35"><img src="./upl/img/1/2/7/3/4723.jpeg"
-                                alt="Монтаж IP камер видеонаблюдения" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/montag-ip-kamer-videonablyudeniya.35">Монтаж IP камер видеонаблюдения</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        В этой странице приведен пример монтажа IP камер Hikvision в таунхаусе. Были установлены уличные
-                        IP камеры и внутренние Wi-Fi камеры. Все работы по монтажу IP видеонаблюдения на этом объекте
-                        были выполнены за два дня.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/montag-ip-kamer-videonablyudeniya.35">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/ip-videonablyudenie-hikvision-ustanovka-ip-videokamer.31"><img
-                                src="./upl/img/1/0/4/0/4160.jpeg"
-                                alt="IP видеонаблюдение Hikvision. Установка IP видеокамер." /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/ip-videonablyudenie-hikvision-ustanovka-ip-videokamer.31">IP видеонаблюдение
-                            Hikvision. Установка IP видеокамер.</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        На участке загородного дома было установлено 8 IP видеокамер Hikvision. Три камеры из восьми
-                        оснащены микрофонами. Все камеры 4 Мп. Монтаж IP видеонаблюдения занял два дня.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/ip-videonablyudenie-hikvision-ustanovka-ip-videokamer.31">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/videonablyudenie-v-detskom-sadu-ustanovka-i-nastroyka.32"><img
-                                src="./upl/img/1/0/9/1/4241.jpeg"
-                                alt="Видеонаблюдение в детском саду. Установка и настройка." /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/videonablyudenie-v-detskom-sadu-ustanovka-i-nastroyka.32">Видеонаблюдение в
-                            детском саду. Установка и настройка.</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        В частном детском саду специалисты установили 8 IP видеокамер. Важным было наличие
-                        микрофонов в камерах видеонаблюдения, качественное изображение, возможность просмотра
-                        изображения с мобильного телефона и ноутбука. Монтаж видеонаблюдения в детском саду был выполнен
-                        за 1 день.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/videonablyudenie-v-detskom-sadu-ustanovka-i-nastroyka.32">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/ustanovka-ip-videonablyudeniya-na-proizvodstve-v-pushkino.45"><img
-                                src="./upl/img/1/4/8/9/5257.jpeg"
-                                alt="Установка IP видеонаблюдения на производстве в Пушкино" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/ustanovka-ip-videonablyudeniya-na-proizvodstve-v-pushkino.45">Установка IP
-                            видеонаблюдения на производстве в Пушкино</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        К нам обратилась крупная производственная компания с задачей разработать и установить
-                        современную систему IP видеонаблюдения в производственных цехах. Важными критериями были
-                        детализированное изображение, удобство работы с архивом и качественный монтаж камер
-                        видеонаблюдения.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/ustanovka-ip-videonablyudeniya-na-proizvodstve-v-pushkino.45">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/montag-ip-kamer-v-magazine-v-torgovom-tsentre.47"><img
-                                src="./upl/img/1/4/d/a/5338.jpeg"
-                                alt="Монтаж IP камер в магазине в торговом центре" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/montag-ip-kamer-v-magazine-v-torgovom-tsentre.47">Монтаж IP камер в магазине
-                            в торговом центре</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        Осуществили монтаж и настройку IP системы видеонаблюдения за один день в магазине торгового
-                        центра. Видео доступно в приложении на смартфоне. Также записывается и звук.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/montag-ip-kamer-v-magazine-v-torgovom-tsentre.47">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/ustanovka-videonablyudeniya-so-zvukom-v-klinike.49"><img
-                                src="./upl/img/1/4/f/b/5371.jpeg"
-                                alt="Установка видеонаблюдения со звуком в клинике" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/ustanovka-videonablyudeniya-so-zvukom-v-klinike.49">Установка
-                            видеонаблюдения со звуком в клинике</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        Многие современные камеры оснащены микрофонами, что позволяет записывать не только видео, но и
-                        звук. Правильно подобранные камеры и видеорегистратор обеспечат качественное изображение и
-                        хороший звук. В этой клинике мы установили камеры Hikvision.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/ustanovka-videonablyudeniya-so-zvukom-v-klinike.49">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/ustanovka-potolochnoy-akusticheskoy-sistemy-v-klinike.50"><img
-                                src="./upl/img/1/5/5/2/5458.jpeg"
-                                alt="Установка потолочной акустической системы в клинике" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/ustanovka-potolochnoy-akusticheskoy-sistemy-v-klinike.50">Установка
-                            потолочной акустической системы в клинике</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        Для более комфортного пребывания гостей или клиентов неплохо было бы установить качественную
-                        потолочную акустическую систему. Хорошая музыка на фоне задает настроение. Что мы и сделали в
-                        данной клинике.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/ustanovka-potolochnoy-akusticheskoy-sistemy-v-klinike.50">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/ustanovka-kamer-videonablyudeniya-v-chastnom-dome.51"><img
-                                src="./upl/img/1/5/5/b/5467.jpeg"
-                                alt="Установка камер видеонаблюдения в частном доме" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/ustanovka-kamer-videonablyudeniya-v-chastnom-dome.51">Установка камер
-                            видеонаблюдения в частном доме</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        Удаленный доступ с телефона к камерам видеонаблюдения. Установили IP систему видеонаблюдения в
-                        частном доме на Новой Риге.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/ustanovka-kamer-videonablyudeniya-v-chastnom-dome.51">Подробнее...</a>
-                </li>
-                <li class="portfolio-slider---new_list-li">
-                    <div class="portfolio-slider---new__image">
-                        <a href="/portfolio/ustanovka-ip-videonablyudeniya-v-ofise.52"><img
-                                src="./upl/img/1/5/7/6/5494.jpeg" alt="Установка IP видеонаблюдения в офисе" /></a>
-                    </div>
-                    <div class="portfolio-slider---new__name">
-                        <a href="/portfolio/ustanovka-ip-videonablyudeniya-v-ofise.52">Установка IP видеонаблюдения в
-                            офисе</a>
-                    </div>
-                    <div class="portfolio-slider---new__text">
-                        Установили IP систему видеонаблюдения HiWatch в двух офисах в Москве и на складе организации.
-                        Для постоянного контроля вывели на экран телевизора изображение с камер всех трех объектов в
-                        кабинете руководителей. Также настроили руководителям удаленный доступ к видеокамерам со
-                        смартфона.
-                    </div>
-                    <a class="portfolio-slider---new_list-li__end"
-                        href="/portfolio/ustanovka-ip-videonablyudeniya-v-ofise.52">Подробнее...</a>
-                </li>
-            </ul>
-            <div class="portfolio-slider---new__all-mobile"><a class="btn" href="/portfolio">Посмотреть
-                    все
-                    работы</a></div>
-        </div>
-    </div>
-    <div class="feedback---new-wrapper-after wrapper-100--back-white">
-        <section class="container-82 feedback---new-wrapper">
-            <h2>Отзывы</h2>
-            <ul class="feedback---new_list">
-                <li class="feedback---new_list-li">
-                    <p class="feedback---new__author">
-                        <span class="feedback---new__name">Татьяна С.,</span>
-                        <span class="feedback---new__position">Коммерческий директор организации</span>
-                    </p>
-                    <div class="feedback---new__text">Компания ООО "Камфор" по нашему запросу осуществила установку СКУД
-                        на объекте нашего нового подразделения. Работы проводились в несколько этапов. Со стороны
-                        подрядчика с нами постоянно контактировал инженер, закрепленный за нашим проектом. Этот факт
-                        значительно упростил этапы согласования оборудования и работ с нашими IT специалистами. В других
-                        компаниях, с которыми мы ранее сотрудничали, контакты часто менялись, что вызывало некоторые
-                        сложности. Хочу отметить, что все специалисты подрядчика, включая монтажников, - это сотрудники
-                        ООО "Камфор". А не приглашенные под проект бригады. Мы не впервые обращаемся в эту организацию.
-                        Ранее эта же компания установила на нашем предприятии систему видеонаблюдения. Хочу отметить
-                        слаженность работ монтажников, скорость и качество выполнения работ. Спасибо, за Ваш подход к
-                        делу. Удачи Вам и процветания!</div>
-                </li>
-                <li class="feedback---new_list-li">
-                    <p class="feedback---new__author">
-                        <span class="feedback---new__name">Константин,</span>
-                        <span class="feedback---new__position">Генеральный директор</span>
-                    </p>
-                    <div class="feedback---new__text">Уважаемый, Партнер!
+   
 
-                        Выражаю благодарность за качественно выполненные работы по монтажу системы контроля доступа и
-                        охранной системы. Теперь я полностью спокоен за сохранность имущества в нашем офисе и могу
-                        контролировать время работы сотрудников. Хочу отдельно поблагодарить Инженера вашей Компании за
-                        проявленный интерес к нестандартным задачам и их решение. Приятно работать с профессионалами.
-                        Всех благ Вам и развития Вашему Бизнесу!
-
-                        С уважением, Константин.</div>
-                </li>
-                <li class="feedback---new_list-li">
-                    <p class="feedback---new__author">
-                        <span class="feedback---new__name">Сергей,</span>
-                        <span class="feedback---new__position">Директор IT отдела</span>
-                    </p>
-                    <div class="feedback---new__text">Добрый день!
-                        Руководство поставило задачу установить СКУД и видеодомофоны на двух этажах нашего здания. Я
-                        обратился в "Камфор" и еще несколько компаний, т.к. нужно было собрать несколько предложений для
-                        выбора монтажной организации. Уже в день обращения к нам приехал специалист! Я даже не ожидал
-                        такой реакции. Мы прошлись, посмотрели, что к чему, и на следующий день я получил КП. В течение
-                        еще нескольких дней я собирал предложения от других компаний. Цены в разных предложениях на
-                        монтаж СКУД дико отличались друг от друга. Некоторые загнули совсем. Наш директор выбрал две
-                        компании и сказал дальше выбрать самому. Цены были сопоставимы, но приезд в день обращения
-                        сотрудника Камфор и его рассудительность определили мой выбор. Хочу сказать, что я не ошибся.
-                        Спасибо за помощь, обращусь еще, если понадобиться. Удачи!</div>
-                </li>
-                <li class="feedback---new_list-li">
-                    <p class="feedback---new__author">
-                        <span class="feedback---new__name">Григорий Васильевич,</span>
-                        <span class="feedback---new__position">Руководитель подразделения</span>
-                    </p>
-                    <div class="feedback---new__text">Хочу выразить благодарность специалистам компании Камфор за
-                        качественно выполненную работу.
-                        Была поставлена задача - ограничить доступ на склад, чтобы снизить риск кражи товара.
-                        Коллектив у нас хороший, все в общем-то свои, но иногда приходят, например, курьеры, и начинают
-                        слоняться по офису.
-                        А на складе дорогое оборудование. После пары неприятных случаев решили, что проще потратиться на
-                        управление доступом.
-                        Поставили на обе двери склада магнитный замок, вход по карточке.
-                        Список карточек в программе, видно кто, когда входил, можно по времени входа найти на видео с
-                        камер.
-                        Заодно сделали вход по карточке в еще несколько помещений, чтобы проходного двора было меньше.
-                        Несмотря на то, что пришлось штробить стену, грязи в процессе было немного, сотрудники Камфор
-                        все предусмотрели, мы смогли все организовать так, чтобы на время "грязных" работ все
-                        пачкающееся в помещении было замотано в пленку. После работ офис выглядел как новый, за что им
-                        отдельная благодарность.
-                        Работа была выполнена качественно. По итогам первых недель - все отлично работает.</div>
-                </li>
-            </ul>
-            <div class="feedback---new-form_wrapper">
-                <h2>Оставьте отзыв</h2>
-                <form class="feedback---new-form" action="">
-                    <input class="feedback---new-form_name" type="name" placeholder="Ваше имя:">
-                    <select class="feedback---new-form_select" name="objects" id="">
-                        <option value="">Выберите место установки:</option>
-                        <option value="kvartira">В квартире</option>
-                        <option value="dom">В доме</option>
-                        <option value="ofice">В офисе</option>
-                        <option value="sklad">На складе</option>
-                        <option value="zavod">На заводе</option>
-                        <option value="ylica">На улице</option>
-                        <option value="salon">В салоне красоты</option>
-                        <option value="magaz">В магазине</option>
-                        <option value="cafe">В ресторане или кафе</option>
-                        <option value="automoika">На автомойке</option>
-                        <option value="service">На автосервисе</option>
-                        <option value="dacha">На даче</option>
-                        <option value="perimetr">На периметре</option>
-                        <option value="predpriyatie">На предприятии</option>
-                    </select>
-                    <textarea class="feedback---new-form_textarea" placeholder="Ваш отзыв:" name="" id="" cols="30"
-                        rows="10"></textarea>
-                    <button class="feedback---new-form_button">Отправить</button>
-                </form>
-            </div>
-            <div class="feedback---new_button-block">
-                <button class="feedback---new-all">Все отзывы</button>
-                <button class="feedback---new-add">Оставить отзыв</button>
-            </div>
-        </section>
-    </div>
-
-
-    <section class="call-us wrapper-100 wrapper-100_form-background">
+    <section id="contact_form" class="call-us wrapper-100 wrapper-100_form-background">
         <div class="background-nd_form">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 235" preserveAspectRatio="none">
                 <polygon points="0,0 0,130 970,235 1400,0" fill="#ffffff"></polygon>
@@ -919,113 +605,20 @@
     <footer class="footer-page wrapper-100 wrapper-100-footer">
         <div class="background-color-darkgrey wrapper-100">
             <div class="container-72 wrapper-footer">
-                <span class="footer-caption---new">Установка систем видеонаблюдения в Москве и МО</span>
+                <span class="footer-caption---new">Установка систем видеонаблюдения в Казахстане</span>
                 <div class="footer-content-block---new">
                     <ul class="footer-city_list---new" id="cities_columns">
                         <li class="footer-city_list-li---new">
-                            Балашиха
+                            Алматы
                         </li>
                         <li class="footer-city_list-li---new">
-                            Видное
+                            Астана
                         </li>
                         <li class="footer-city_list-li---new">
-                            Дзержинский
+                            Вставить_город
                         </li>
                         <li class="footer-city_list-li---new">
-                            Дмитров
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Долгопрудный
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Домодедово
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Железнодорожный
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Жуковский
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Ивантеевка
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Истра
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Королев
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Котельники
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Красноармейск
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Красногорск
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Лобня
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Лыткарино
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Люберцы
-                        </li>
-                        <li class="footer-city_list-li---new" class="important">
-                            <a class="footer-city_list-li-a---new" href="/cities/moskva.36">МОСКВА</a>
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Мытищи
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Ногинск
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Одинцово
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Орехово-Зуево
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Пушкино
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Раменское
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Реутов
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Сергиев Посад
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Солнечногорск
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Фрязино
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Химки
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Хотьково
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Черноголовка
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Щелково
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Электросталь
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Электроугли
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Юбилейный
+                            Вставить_город
                         </li>
                     </ul>
                     <ul class="footer-menu-mobile---new">
@@ -1062,7 +655,7 @@
                                         src="./upl/tw.png" alt=""></a></li>
                         </ul>
                     </div>
-                    <span class="footer-caption-mobile---new">Установка систем видеонаблюдения в Москве и МО</span>
+                    <span class="footer-caption-mobile---new">Установка систем видеонаблюдения в Казахстане</span>
                     <ul class="footer-city_list-mobile---new" id="cities_columns">
                         <li>
                             Балашиха
@@ -1191,9 +784,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="./j/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="./j/slick.min.js"></script>
-    <script src="./j/script.js?1687587808"></script>
+
 </body>
 
 </html>
