@@ -187,7 +187,16 @@ $(document).ready(function() {
     $(document)
         .on('submit', '.js-user-ask-call', function(e) {
             e.preventDefault();
-            camfor.user.askCall(e.target);
+
+            var name = $('.form-name')[0].value;
+            var phone = $('.form-phone')[0].value;
+
+            var mailtoLink = "mailto:its-astana@yandex.kz";
+            mailtoLink += "?subject=Form%20Submission";
+            mailtoLink += "&body=Name:%20" + encodeURIComponent(name);
+            mailtoLink += "%0D%0APhone:%20" + encodeURIComponent(phone);
+            
+            window.location.href = mailtoLink;
         })
         .on('click', '[data-imp-lightbox-trigger]', function(e) {
             $('[data-imp-lightbox-trigger]').impLightbox();

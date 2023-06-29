@@ -35,8 +35,13 @@
 <body>
     <header class="header-menu">
         <div class="container-82 top-menu---new">
-            <a class="top-menu---new_logo" href="/">
-                <img class="top-menu---new_logo-img" src="./upl/logo.png" width="60" height="60" alt="logo">
+            <a class="flex top-menu---new_logo gap-2 items-center" href="/">
+                <div>
+                <img class="top-menu---new_logo-img" width="60" height="60" src="./upl/logo.png" alt="logo">
+                </div>
+                <div>
+                    <img class="top-menu---new_logo-img" width="160" src="./upl/logo-text.png" alt="logo">
+                </div>
             </a>
             <div class="top-menu---new_block">
                 <nav class="top-menu---new_nav">
@@ -45,16 +50,10 @@
                             <a class="top-menu---new_nav-a" href="">Услуги</a>
                         </li>
                         <li class="top-menu---new_nav-list-li menu-none_5">
-                            <a class="top-menu---new_nav-a" href="/warranty">Гарантия</a>
+                            <a class="top-menu---new_nav-a" href="#installation">Установка</a>
                         </li>
                         <li class="top-menu---new_nav-list-li menu-none_4">
-                            <a class="top-menu---new_nav-a" href="/business">Для бизнеса</a>
-                        </li>
-                        <li class="top-menu---new_nav-list-li menu-none_3">
-                            <a class="top-menu---new_nav-a" href="/contacts">Контакты</a>
-                        </li>
-                        <li class="top-menu---new_nav-list-li menu-none_1">
-                            <a class="top-menu---new_nav-a" href="/articles">Статьи</a>
+                            <a class="top-menu---new_nav-a" href="#key_opportunities">Ключевые возможности</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,19 +79,10 @@
                             <a href="" class="burger-menu_list-li-a">Услуги</a>
                         </li>
                         <li class="burger-menu_list-li menu-block_5">
-                            <a href="/warranty" class="burger-menu_list-li-a">Гарантия</a>
+                            <a href="#installation" class="burger-menu_list-li-a">Установка</a>
                         </li>
                         <li class="burger-menu_list-li menu-block_4">
-                            <a href="/business" class="burger-menu_list-li-a">Для бизнеса</a>
-                        </li>
-                        <li class="burger-menu_list-li menu-block_3">
-                            <a href="/contacts" class="burger-menu_list-li-a">Контакты</a>
-                        </li>
-                        <li class="burger-menu_list-li menu-block_1">
-                            <a href="/articles" class="burger-menu_list-li-a">Статьи</a>
-                        </li>
-                        <li class="burger-menu_list-li">
-                            <a href="/faq" class="burger-menu_list-li-a">Часто задаваемые вопросы</a>
+                            <a href="#key_opportunities" class="burger-menu_list-li-a">Ключевые возможности</a>
                         </li>
                         <li class="burger-menu_list-li burger-menu_list-li-email">
                             <a href="mailto:its-astana@yandex.kz" class="burger-menu_list-li-a">its-astana@yandex.kz</a>
@@ -104,7 +94,7 @@
                 </div>
             </div>
     </header>
-    <div class="main_banner---new wrapper-100">
+    <div id="installation" class="main_banner---new wrapper-100">
         <ul class="main_banner---new__container">
             <li>
                 <a href="#contact_form" class="main_banner---new__img--desktop">
@@ -357,36 +347,7 @@
             </section>
         </div>
     </div>
-    <div class="call-us call-us_old">
-        <div class="cf-wrapper">
-            <form class="clearfix js-user-ask-call" action="" method="post">
-                <a class="call-us__phone--big" href="tel:+77781001206">
-                    <p>позвоните нам по телефону</p>
-                    <span>+7 778 100 12 06</span>
-                </a>
-                <p class="call-us__phone">
-                    Позвоните нам <br>
-                    <span class="ya-phone">
-                        <a href="tel:+77781001206">+7 &nbsp;778 &nbsp;100 12 06</a>
-                    </span>
-                </p>
-                <p class="call-us__sign">Или оставьте данные, и мы перезвоним Вам сами</p>
-                <input onclick="yaCounter43677764.reachGoal('obrashchatsya'); return true;"
-                    class="call-us__name form-text" type="text" name="name" placeholder="Как к Вам обращаться?" />
-                <input onclick="yaCounter43677764.reachGoal('nomer'); return true;" class="call-us__number form-text"
-                    type="text" name="phone" placeholder="Введите Ваш номер" />
-                <input onclick="yaCounter43677764.reachGoal('otpravit'); return true;"
-                    class="btn btn-primary call-us__button " type="submit" value="Отправить" />
-                <label class="call-us__agree_label">
-                    <input type="checkbox" name="agree" value="1" class="call-us__agree" checked>
-                    Я подтверждаю свою дееспособность и даю согласие <a href="https://videocamera.kz/personal_agree">по
-                        установленной форме</a>
-                    на обработку персональных данных.
-                </label>
-            </form>
-        </div>
-    </div>
-    <div class="cf-wrapper">
+    <div id="key_opportunities" class="cf-wrapper">
         <div class="cf-content cf-goods ">
             <h2 class="name-block-landing">Ключевые возможности современных охранных систем</h2>
             <div class="cf-catalog__wrapper-4">
@@ -610,29 +571,16 @@
         </div>
         <div class="background-color-lightblue wrapper-100">
             <div class="wrapper-form">
-                <form class="container-72 form-block js-user-ask-call" action="" method="post">
+                <form class="container-72 form-block js-user-ask-call" action="" method="GET" enctype="text/plain">
                     <div class="form-caption">
                         <p class="form-caption_p">Появились вопросы?</p>
                         <p class="form-caption_p">Мы вам перезвоним</p>
                     </div>
                     <div class="form-block_inputs">
                         <input class="call-us__new" type="hidden" name="new" value="1">
-                        <input onclick="yaCounter43677764.reachGoal('obrashchatsya'); return true;"
-                            class="call-us__name form-text form-name" type="text" name="name" placeholder="Ваше имя:"
-                            value="">
-                        <input onclick="yaCounter43677764.reachGoal('nomer'); return true;"
-                            class="call-us__number form-text form-phone" type="text" name="phone" placeholder="+7"
-                            value="">
-                        <label class="personal-data-checkbox">
-                            <input class="input-checkbox js-call-us__agree" type="checkbox" name="agree" value="1"
-                                checked>
-                            Я подтверждаю свою дееспособность и даю согласие <a class="personal-data-checkbox_a"
-                                href="https://videocamera.kz/personal_agree">по установленной форме</a>
-                            на обработку персональных данных
-
-                        </label>
-                        <input onclick="yaCounter43677764.reachGoal('otpravit'); return true;"
-                            class="btn btn-primary form-block_button" type="submit" value="Отправить заявку">
+                        <input class="call-us__name form-text form-name" type="text" name="name" placeholder="Ваше имя:" value="">
+                        <input class="call-us__number form-text form-phone" type="text" name="phone" placeholder="+7" value="">
+                        <input class="btn btn-primary form-block_button" type="submit" value="Отправить заявку">
                     </div>
                 </form>
             </div>
@@ -646,45 +594,7 @@
     <footer class="footer-page wrapper-100 wrapper-100-footer">
         <div class="background-color-darkgrey wrapper-100">
             <div class="container-72 wrapper-footer">
-                <span class="footer-caption---new">Установка систем видеонаблюдения в Казахстане</span>
                 <div class="footer-content-block---new">
-                    <ul class="footer-city_list---new" id="cities_columns">
-                        <li class="footer-city_list-li---new">
-                            Алматы
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Астана
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Вставить_город
-                        </li>
-                        <li class="footer-city_list-li---new">
-                            Вставить_город
-                        </li>
-                    </ul>
-                    <ul class="footer-menu-mobile---new">
-                        <li class="footer-menu_li-mobile---new">
-                            <a class="footer-menu_li-a-mobile---new" href="https://videocamera.kz/contacts">Контакты</a>
-                        </li>
-                        <li class="footer-menu_li-mobile---new">
-                            <a class="footer-menu_li-a-mobile---new" href="/solutions">Готовые
-                                решения</a>
-                        </li>
-                        <li class="footer-menu_li-mobile---new">
-                            <a class="footer-menu_li-a-mobile---new" href="/faq">Часто
-                                задаваемые вопросы</a>
-                        </li>
-                        <li class="footer-menu_li-mobile---new">
-                            <a class="footer-menu_li-a-mobile---new" href="/payment">Оплата</a>
-                        </li>
-                        <li class="footer-menu_li-mobile---new">
-                            <a class="footer-menu_li-a-mobile---new" href="/warranty">Гарантия</a>
-                        </li>
-                        <li class="footer-menu_li-mobile---new">
-                            <a class="footer-menu_li-a-mobile---new" href="/cena-na-montazh-videonablyudeniya">Цены на
-                                монтаж</a>
-                        </li>
-                    </ul>
                     <div class="footer-contacts---new">
                         <span class="footer-contacts_email---new">
                             <a href="mailto:its-astana@yandex.kz">its-astana@yandex.kz</a>
@@ -692,115 +602,7 @@
                         <span class="footer-contacts_tel---new ya-phone"><a href="tel:+77781001206">+7(778)
                                 <span class="footer-contacts_tel-big---new"> 100-12-06</span></a>
                         </span>
-                        <ul class="footer-contacts_soc---new">
-                            <li class="footer-contacts_soc-li---new">
-                                <a class="footer-contacts_soc-li-a---new" href="https://paste_your_url_here.com">
-                                    <img class="footer-contacts_soc-li-a-img---new" src="./upl/vk.png" alt="">
-                                </a>
-                            </li>
-                            <li class="footer-contacts_soc-li---new">
-                                <a class="footer-contacts_soc-li-a---new" href="https://paste_your_url_here.com">
-                                    <img class="footer-contacts_soc-li-a-img---new" src="./upl/tw.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
                     </div>
-                    <span class="footer-caption-mobile---new">Установка систем видеонаблюдения в Казахстане</span>
-                    <ul class="footer-city_list-mobile---new" id="cities_columns">
-                        <li>Балашиха
-                        </li>
-                        <li>Видное
-                        </li>
-                        <li>Дзержинский
-                        </li>
-                        <li>Дмитров
-                        </li>
-                        <li>Долгопрудный
-                        </li>
-                        <li>Домодедово
-                        </li>
-                        <li>Железнодорожный
-                        </li>
-                        <li>Жуковский
-                        </li>
-                        <li>Ивантеевка
-                        </li>
-                        <li>Истра
-                        </li>
-                        <li>Королев
-                        </li>
-                        <li>Котельники
-                        </li>
-                        <li>Красноармейск
-                        </li>
-                        <li>Красногорск
-                        </li>
-                        <li>Лобня
-                        </li>
-                        <li>Лыткарино
-                        </li>
-                        <li>Люберцы
-                        </li>
-                        <li class="important footer-city_list-li-mobile---new">
-                            <a class="footer-city_list-li-a-mobile---new" href="/cities/moskva.36">МОСКВА</a>
-                        </li>
-                        <li>Мытищи
-                        </li>
-                        <li>Ногинск
-                        </li>
-                        <li>Одинцово
-                        </li>
-                        <li>Орехово-Зуево
-                        </li>
-                        <li>Пушкино
-                        </li>
-                        <li>Раменское
-                        </li>
-                        <li>Реутов
-                        </li>
-                        <li>Сергиев Посад
-                        </li>
-                        <li>Солнечногорск
-                        </li>
-                        <li>Фрязино
-                        </li>
-                        <li>Химки
-                        </li>
-                        <li>Хотьково
-                        </li>
-                        <li>Черноголовка
-                        </li>
-                        <li>Щелково
-                        </li>
-                        <li>Электросталь
-                        </li>
-                        <li>Электроугли
-                        </li>
-                        <li>Юбилейный
-                        </li>
-                    </ul>
-                    <ul class="footer-menu---new">
-                        <li class="footer-menu_li---new footer-menu_li-1">
-                            <a class="footer-menu_li-a---new" href="/contacts">Контакты</a>
-                        </li>
-                        <li class="footer-menu_li---new footer-menu_li-2">
-                            <a class="footer-menu_li-a---new" href="/solutions">Готовые решения</a>
-                        </li>
-                        <li class="footer-menu_li---new footer-menu_li-3">
-                            <a class="footer-menu_li-a---new" href="/faq">Часто
-                                задаваемые вопросы</a>
-                        </li>
-                        <li class="footer-menu_li---new footer-menu_li-1">
-                            <a class="footer-menu_li-a---new" href="/warranty">Гарантия</a>
-                        </li>
-                        <li class="footer-menu_li---new footer-menu_li-2">
-                            <a class="footer-menu_li-a---new" href="/cena-na-montazh-videonablyudeniya">Цены
-                                на монтаж</a>
-                        </li>
-                        <li class="footer-menu_li---new footer-menu_li-3">
-                            <a class="footer-menu_li-a---new" href="/payment">Оплата</a>
-                        </li>
-                    </ul>
                     <p class="footer-content-block_copyright---new">Videocamera.kz, 2023. Videocamera.kz - системы
                         видеонаблюдения</p>
                 </div>

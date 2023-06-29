@@ -34,6 +34,18 @@ pre {
     margin-bottom: 0;
 }
 
+.flex {
+    display: flex;
+}
+
+.gap-2 {
+    gap: 10px;
+}
+
+.items-center {
+    align-items: center;
+}
+
 a {
     background-color: transparent
 }
@@ -2704,8 +2716,7 @@ p.admn-img-float img {
         display: none
     }
     .top-menu---new_logo {
-        height: 40px;
-        width: 40px;
+        display: flex;
     }
     .top-menu---new_logo-img {
         height: 40px;
