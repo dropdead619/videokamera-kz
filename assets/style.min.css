@@ -1881,8 +1881,7 @@ body p {
     font-size: 16px;
     z-index: 2;
     position: absolute;
-    height: 60px;
-    width: 230px;
+    padding: 8px 24px;
     transition: all .5s ease
 }
 
@@ -1993,11 +1992,9 @@ body p {
 
 .footer-caption---new {
     font-family: Roboto-Bold;
-    font-size: 25px;
+    font-size: 20px;
     color: #7d7d7d;
-    width: 460px;
     display: block;
-    margin: 30px 0 15px
 }
 
 .footer-caption-mobile---new {
@@ -2005,13 +2002,14 @@ body p {
 }
 
 .footer-content-block---new {
-    display: block;
-    margin: 0 auto
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-content-block_copyright---new {
     width: 100%;
     margin: 0 0 15px;
+    margin-top: 30px;
     font-size: 10px
 }
 
@@ -2098,9 +2096,7 @@ body p {
 }
 
 .footer-contacts---new {
-    float: right;
     width: 23%;
-    margin-top: 32px
 }
 
 .footer-contacts_email---new {
@@ -2717,10 +2713,14 @@ p.admn-img-float img {
     }
     .top-menu---new_logo {
         display: flex;
+        gap: 2px;
     }
     .top-menu---new_logo-img {
         height: 40px;
         width: 40px;
+    }
+    .top-menu---new_logo-img-text {
+        width: 90px;
     }
     .top-menu---new_burger-img {
         width: 32px
@@ -3000,10 +3000,7 @@ p.admn-img-float img {
     .form-block {
         padding: 55px 0 25px
     }
-    .form-block_button {
-        height: 53px;
-        width: 210px
-    }
+
     .form-caption_p {
         font-size: 28px
     }
@@ -3024,9 +3021,6 @@ p.admn-img-float img {
     }
     .footer-menu---new {
         margin: 52px 0 50px
-    }
-    .footer-contacts---new {
-        margin-top: 20px
     }
 }
 
@@ -3616,9 +3610,8 @@ p.admn-img-float img {
         padding: 50px 0 10px
     }
     .form-block_button {
-        height: 40px;
-        width: 170px;
         font-size: 14px;
+        padding: 4px 16px;
         margin-left: 0
     }
     .form-caption_p {
@@ -3642,8 +3635,7 @@ p.admn-img-float img {
     }
     .footer-caption---new {
         font-size: 18px;
-        width: 300px;
-        margin: 6px 0 15px
+        max-width: 350px;
     }
     .footer-city_list---new {
         margin-top: 5px;
@@ -3914,9 +3906,6 @@ p.admn-img-float img {
     .form-name {
         height: 35px
     }
-    .footer-caption---new {
-        display: none
-    }
     .footer-caption-mobile---new {
         display: block;
         float: left;
@@ -3971,7 +3960,6 @@ p.admn-img-float img {
         font-weight: 700
     }
     .footer-contacts---new {
-        margin-top: 35px;
         width: 50%
     }
     .footer-contacts_email---new {
@@ -4279,8 +4267,6 @@ p.admn-img-float img {
         width: 100%
     }
     .form-block_button {
-        height: 40px;
-        width: 170px;
         font-size: 14px;
         right: 0
     }
@@ -4449,9 +4435,8 @@ p.admn-img-float img {
         width: 15%
     }
     .form-block_button {
-        height: 35px;
-        width: 150px;
-        font-size: 13px
+        font-size: 13px;
+        width: 100%;
     }
     .rate-block__text {
         margin: 45px 0 55px
