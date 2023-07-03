@@ -34,6 +34,14 @@ pre {
     margin-bottom: 0;
 }
 
+.visible {
+    display: block !important;
+}
+
+.hidden {
+    display: hidden !important;
+}
+
 .flex {
     display: flex;
 }
@@ -1893,6 +1901,7 @@ body p {
 }
 
 .form-block_call-us__sign {
+    display: none;
     text-align: center;
     font-size: 16px;
     margin-top: 8%;

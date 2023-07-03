@@ -538,18 +538,28 @@
         </div>
         <div class="background-color-lightblue wrapper-100">
             <div class="wrapper-form">
-                <form class="container-72 form-block js-user-ask-call" action="" method="GET" enctype="text/plain">
+                <form class="container-72 form-block js-user-ask-call" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f67173b4-4d8b-4fae-a4b2-8e1c59f0f9e6">
+                    <input type="hidden" name="subject" value="Новая заявка ">
+                    <input type="hidden" name="from_name" value="videocamera.kz">
                     <div class="form-caption">
                         <p class="form-caption_p">Появились вопросы?</p>
                         <p class="form-caption_p">Мы вам перезвоним</p>
                     </div>
                     <div class="form-block_inputs">
                         <input class="call-us__new" type="hidden" name="new" value="1">
-                        <input class="call-us__name form-text form-name" type="text" name="name" placeholder="Ваше имя:" value="">
-                        <input class="call-us__number form-text form-phone" type="text" name="phone" placeholder="+7" value="">
+                        <input class="call-us__name form-text form-name" type="text" name="name" placeholder="Ваше имя:" value="" required>
+                        <input class="call-us__number form-text form-phone" type="text" name="phone" placeholder="+7" value="" required>
                         <input class="btn btn-primary form-block_button" type="submit" value="Отправить заявку">
                     </div>
+
+                    <div class="call-us__sign form-block_call-us__sign">
+                        <span>Спасибо за Вашу заявку!</span>
+                        <p>Мы свяжемся с вами в близжайшее время!</p>
+                    </div>
                 </form>
+
+                
             </div>
         </div>
     </section>

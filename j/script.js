@@ -83,6 +83,8 @@ if (!(location.hostname === 'videocamera.kz' || location.hostname === 'dev.video
     };
 })(jQuery);
 
+let validForm = false;
+
 var camfor = {
         common: {
             setLoader: function(element) {
@@ -125,13 +127,10 @@ var camfor = {
             },
             askCallValidate: function(element) {
                 console.log('Validating');
-                var valid = false,
+                valid = false,
                     el = $(element).parents('.call-us').first(),
-                    agree = el.find('.call-us__agree').first().is(":checked"),
                     phone = el.find('.call-us__number').first(),
                     phoneRegexp = /\d+/;
-
-                agree = agree ? agree : el.find('.js-call-us__agree').first().is(":checked");
 
                 if (/\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?/.test(phone.val())) {
                     phone.css('background-color', '#fff');
@@ -140,17 +139,18 @@ var camfor = {
                     phone.css('background-color', '#fbb');
                     valid = false;
                 }
-                if (agree && valid) {
+                if (valid) {
                     valid = true;
                 } else {
                     valid = false;
                 }
 
                 if (valid) {
-                    $(el).find('.call-us__button').removeClass('btn-disabled');
+                    $(el).find('.form-block_button').removeClass('btn-disabled');
                 } else {
-                    $(el).find('.call-us__button').addClass('btn-disabled');
+                    $(el).find('.form-block_button').addClass('btn-disabled');
                 }
+
                 if (valid) {
                     console.log('Validating: yes');
                 } else {
@@ -188,15 +188,12 @@ $(document).ready(function() {
         .on('submit', '.js-user-ask-call', function(e) {
             e.preventDefault();
 
-            var name = $('.form-name')[0].value;
-            var phone = $('.form-phone')[0].value;
-
-            var mailtoLink = "mailto:its-astana@yandex.kz";
-            mailtoLink += "?subject=Form%20Submission";
-            mailtoLink += "&body=Name:%20" + encodeURIComponent(name);
-            mailtoLink += "%0D%0APhone:%20" + encodeURIComponent(phone);
-            
-            window.location.href = mailtoLink;
+            if (valid) {
+                $('.call-us__sign').addClass('visible');
+            } else {
+                $('.form-caption').addClass('hidden');
+                $('.form-block_inputs').addClass('hidden');
+            }
         })
         .on('click', '[data-imp-lightbox-trigger]', function(e) {
             $('[data-imp-lightbox-trigger]').impLightbox();
