@@ -28,6 +28,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
     <script src="./j/script.js?1687587808" defer></script>
 
     <!-- [if IE]>
@@ -541,25 +542,35 @@
     <section id="contact_form" class="call-us wrapper-100 wrapper-100_form-background">
         <div class="background-nd_form">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 235" preserveAspectRatio="none">
-                <polygon points="0,0 0,130 970,235 1400,0" fill="#ffffff"></polygon>
-                <polyline points="0,30 470,220 1400,130" fill="none" stroke-width="3" stroke="#EB1A16"
-                    stroke-opacity="0.15"></polyline>
-            </svg>
+            <polygon points="0,0 0,130 970,235 1400,0" fill="#ffffff"></polygon>
+            <polyline points="0,30 470,220 1400,130" fill="none" stroke-width="3" stroke="#EB1A16" stroke-opacity="0.15"></polyline>
+        </svg>
         </div>
         <div class="background-color-lightblue wrapper-100">
             <div class="wrapper-form">
-                <form class="container-72 form-block js-user-ask-call" action="" method="GET" enctype="text/plain">
+                <form class="container-72 form-block js-user-ask-call" id="form_request"  method="POST">
+                    <input type="hidden" name="access_key" value="f67173b4-4d8b-4fae-a4b2-8e1c59f0f9e6">
+                    <input type="hidden" name="subject" value="Новая заявка">
+                    <input type="hidden" name="from_name" value="videocamera.kz">
+                    <input type="checkbox" name="botcheck" id="" style="display: none;">
                     <div class="form-caption">
                         <p class="form-caption_p">Появились вопросы?</p>
                         <p class="form-caption_p">Мы вам перезвоним</p>
                     </div>
                     <div class="form-block_inputs">
                         <input class="call-us__new" type="hidden" name="new" value="1">
-                        <input class="call-us__name form-text form-name" type="text" name="name" placeholder="Ваше имя:" value="">
-                        <input class="call-us__number form-text form-phone" type="text" name="phone" placeholder="+7" value="">
+                        <input class="call-us__name form-text form-name" type="text" name="name" placeholder="Ваше имя:" value="" required>
+                        <input class="call-us__number form-text form-phone" id="phone_mask_input" type="text" name="phone" placeholder="+7" value="" required>
                         <input class="btn btn-primary form-block_button" type="submit" value="Отправить заявку">
                     </div>
+
+                    <div class="call-us__sign form-block_call-us__sign">
+                        <span>Спасибо за Вашу заявку!</span>
+                        <p>Мы свяжемся с вами в близжайшее время!</p>
+                    </div>
                 </form>
+
+                
             </div>
         </div>
     </section>

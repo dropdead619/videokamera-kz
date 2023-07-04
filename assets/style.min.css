@@ -39,7 +39,7 @@ pre {
 }
 
 .hidden {
-    display: hidden !important;
+    display: none !important;
 }
 
 .flex {

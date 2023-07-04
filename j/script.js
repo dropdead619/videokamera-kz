@@ -132,7 +132,7 @@ var camfor = {
                     phone = el.find('.call-us__number').first(),
                     phoneRegexp = /\d+/;
 
-                if (/\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?/.test(phone.val())) {
+                if (/\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?\d.*?/.test(phone.val())) {
                     phone.css('background-color', '#fff');
                     valid = true;
                 } else {
@@ -184,15 +184,42 @@ $(document).ready(function() {
             }
         }]
     });
+    const masksOptions = {
+        phone: {
+          mask: '+{7} (000) 000-00-00'
+        }
+      };
+    const phoneMask = document.getElementById('phone_mask_input');
+    const mask = new IMask(phoneMask, masksOptions.phone);
+    
     $(document)
         .on('submit', '.js-user-ask-call', function(e) {
             e.preventDefault();
+            const form = document.getElementById('form_request');
+            const formData = new FormData(form);
+            formData.set('phone', '+' + mask.unmaskedValue);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
 
             if (valid) {
-                $('.call-us__sign').addClass('visible');
-            } else {
-                $('.form-caption').addClass('hidden');
-                $('.form-block_inputs').addClass('hidden');
+                fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .catch(error => {
+            console.log(error);
+        })
+        .then(function() {
+            form.reset();
+            $('.call-us__sign').addClass('visible');
+            $('.form-caption').addClass('hidden');
+            $('.form-block_inputs').addClass('hidden');
+            $('.form-caption').addClass('hidden');
+        });
             }
         })
         .on('click', '[data-imp-lightbox-trigger]', function(e) {
